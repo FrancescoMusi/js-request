@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 
-numeroEsercizio = 11
+numeroEsercizio = 9
 
 const es = () => {
   fetch("http://localhost:8080/esercizi/" + numeroEsercizio, {
@@ -12,10 +12,14 @@ const es = () => {
     console.log(resBody)
 
     //risoluzione problema
-    let risultato = resBody.data.sort()
+    let risultato = resBody.data.reduce((acc, e) => {
+      if (e % 2 != 0) {
+        return acc + e;
+      }
+
+      return acc 
+    }, 0); //se non metto che parte da 0 parte dal primo numero della lista
     
-    //restituisce array
-    risultato = risultato.map(e => e.toLowerCase())
 
     //stampa il risultato ottenuto 
     console.log(risultato)

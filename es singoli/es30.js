@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 
-numeroEsercizio = 21
+numeroEsercizio = 30
 
 const es = () => {
   fetch("http://localhost:8080/esercizi/" + numeroEsercizio, {
@@ -12,11 +12,20 @@ const es = () => {
     console.log(resBody)
 
     //risoluzione problema
-    let risultato = resBody.data.filter(n => {
-      if (n <= 5) {
-        return n
+    let rows = resBody.data.split("\n")
+    let h = rows.length
+    let w = rows[0].length
+    
+    let risultato = {}
+
+    for (let y = 0; y < h; y++) {
+      for (let x = 0; x < w; x++) {
+        if (rows[y][x] == "X") {
+          risultato.x = x
+          risultato.y = y
+        }
       }
-    })
+    }
 
 
     //stampa il risultato ottenuto 

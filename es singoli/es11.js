@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 
-numeroEsercizio = 30
+numeroEsercizio = 11
 
 const es = () => {
   fetch("http://localhost:8080/esercizi/" + numeroEsercizio, {
@@ -12,14 +12,7 @@ const es = () => {
     console.log(resBody)
 
     //risoluzione problema
-    let risultato = {}
-
-    let x = 0
-    let y = 0
-
-    //??
-
-    console.log(x, y)
+    let risultato = resBody.data.map(e => e.toLowerCase()).sort()
 
 
     //stampa il risultato ottenuto 

@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 
-numeroEsercizio = 9
+numeroEsercizio = 28
 
 const es = () => {
   fetch("http://localhost:8080/esercizi/" + numeroEsercizio, {
@@ -12,14 +12,13 @@ const es = () => {
     console.log(resBody)
 
     //risoluzione problema
-    let risultato = resBody.data.reduce((previous, next) => {
-      if (next % 2 != 0) {
-        return previous + next;
-      }
+    let risultato = {}
 
-      return previous 
-    });
     
+    for (let i = 0; i < resBody.data.negozio.length; i++) {
+      risultato[resBody.data.negozio[i]] = resBody.data.magazzino.filter(e => e == resBody.data.negozio[i]).length + resBody.data.negozio.filter(e => e == resBody.data.negozio[i]).length
+      //questa espresione crea un array con i dati voluti e conta la lunghezza
+    }
 
     //stampa il risultato ottenuto 
     console.log(risultato)
