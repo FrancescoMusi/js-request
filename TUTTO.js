@@ -1187,3 +1187,39 @@ es27()
 es28()
 es29()
 es30()
+
+
+
+
+/*
+1 Data una parola maiuscola restituiscila minuscola
+2 Dato un numero restituiscilo moltiplicato per se stesso
+3 Dato un dictionary restituisci il valore alla chiave 'cognome'
+4 Data una lista restituisci la sua lunghezza
+5 Data una lista di parole invia una lista contenente le stesse parole tutte maiuscole
+6 Data una lista di numeri restituiscine la somma
+7 Data una lista di numeri restituisci la somma dei numeri maggiori di 5
+8 Data una lista di numeri restituisci la somma dei numeri in posizioni pari (zero compreso)
+9 Data una lista di numeri restituisci la somma dei numeri dispari
+10 Data una lista di parole ordinale in ordine alfabetico
+11 Data una lista di parole ordinale in ordine alfabetico e restituiscile tutte minuscole (attenzione, le parole possono avere delle lettere maiuscole)
+12 Data una lista di numeri restituiscine una contenente i numeri precedenti a quelli dati; es: [3, 5, 2] ---> [2, 4, 1]
+13 Data una lista di numeri restituiscine una in cui ogni numero sia sommato con quello alla posizione successiva; l'ultimo numero della lista rimane invariato
+14 Data una lista di numeri, conta i positivi, i negativi e gli zeri e restituisci un dictionary che riporti i dati rilevati con le seguenti chiavi: "positivi", "negativi", "zeri"
+15 data una lista di parole, restituisci una nuova lista in cui le parole con un numero di lettere pari siano scritte in maiuscolo e le altre in minuscolo
+16 data una lista di parole, restituisci una sola stringa che contenga tutte le parole della lista separate da uno spazio. ATTENZIONE: l'ultima parola non deve essere seguita da uno spazio
+17 data una lista di parole, restituisci una sola stringa formata dall'ultimo carattere di ogni parola
+18 data una lista di parole, restituisci una sola stringa formata dal primo carattere di ogni parola più lunga di 4 caratteri
+19 Dato un numero restituisci una lista contenente tutti i suoi divisori ordinati in ordine crescente
+20 Dato una lista di persone restituisci una lista contenente il numero di figli di ciascuna persona
+21 Data una lista di numeri restituisci una lista in cui siano esclusi tutti i valori maggiori di 5
+22 Data una lista di numeri restituiscine una in cui ci siano presenti solo i valori compresi tra 3 e 6 inclusi
+23 Data una lista di persone restituisci il numero derivato dalla somma di tutti i loro anni
+24 Data una lista di persone restituisci una lista di nomi di tutte le persone che hanno un cognome che inizia per C
+25 data una lista di stringhe restituisci il numero di "a" che compaiono in totale
+26 data una lista di numeri restituisci una lista in cui tutti i positivi siano negativi e viceversa
+27 dato un dictionary contenente le chiavi "negozio" e "magazzino", restituisci una lista formata da tutti i prodotti di entrambe le liste non ripetuti e ordinati alfabeticamente
+28 dato un dictionary contenente le chiavi "negozio" e "magazzino", restituisci un dictionary nel quale la chiave sia il nome di ciascun prodotto DEL NEGOZIO e il valore sia il numero di pezzi di quel prodotto presenti SIA NEL NEGOZIO CHE NEL MAGAZZINO
+29 dato un numero calcolane il fattoriale
+30 data una mappa costituita da una stringa di varie righe, trova le coordinate della posizione del tesoro (reppresentata dal carattere X) e restituiscile in un dictionary alle chiavi "x" e "y"
+*/
